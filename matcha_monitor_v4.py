@@ -20,7 +20,7 @@
   python matcha_monitor.py --dry-run     只检查并打印每个商品的状态，不发邮件（建议先跑这个，对照网站核对）
   python matcha_monitor.py --dump        把列表页原始 HTML 存成 list_page.html，方便排查
   python matcha_monitor.py --test-mail   发一封测试邮件，验证邮箱配置
-  python matcha_monitor_v4.py --test-mail       检查一次就退出（适合配合 cron / 任务计划程序）
+  python matcha_monitor_v4.py --once       检查一次就退出（适合配合 cron / 任务计划程序）
   python matcha_monitor.py               常驻运行，每 INTERVAL 秒检查一次
 """
 
