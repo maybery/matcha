@@ -23,7 +23,7 @@ jobs:
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
           MAIL_TO: ${{ secrets.MAIL_TO }}
-        run: python matcha_monitor_v4.py --test-mail
+        run: python matcha_monitor_v4.py --once
       - name: Save state
         run: |
           if [ -n "$(git status --porcelain matcha_state.json)" ]; then
