@@ -45,7 +45,7 @@ except ImportError:
 
 # ====== 可调参数 ======
 LIST_URL = "https://www.marukyu-koyamaen.co.jp/english/shop/products/catalog/matcha/principal"
-THRESHOLD = 3          # 有货种类 > 3 时通知（即 4 种及以上）；想改成"3 种及以上"就设为 2
+THRESHOLD = 4          # 有货种类 > 4 时通知（即 5 种及以上）；想改成"3 种及以上"就设为 2
 INTERVAL = 300         # 常驻模式下的检查间隔（秒），建议不要低于 120
 REMIND_EVERY = 300    # 持续有货期间，每隔多少秒重复提醒一次（300 = 5 分钟）
 STATE_FILE = Path(__file__).with_name("matcha_state.json")
