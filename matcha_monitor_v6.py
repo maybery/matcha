@@ -50,7 +50,7 @@ INTERVAL = 300         # 常驻模式下的检查间隔（秒），建议不要�
 REMIND_EVERY = 240     # 持续有货期间，每隔多少秒重复提醒一次（240 = 4 分钟；配合 5 分钟触发，每轮都会提醒）
 # 关注名单：只盯这几款（写列表页上的商品名，不区分大小写；也可以写商品代码如 1171020c1）。
 # 名单非空时：只要名单里任意一款有货就通知，THRESHOLD 不再起作用；名单为空 [] 则按 THRESHOLD 数量规则。
-WATCHLIST = ["Unkaku","Aoarashi","Yugen", "Isuzu","Chigi no Shiro"]
+WATCHLIST = ["Yugen", "Isuzu","Chigi no Shiro"]
 STATE_FILE = Path(__file__).with_name("matcha_state.json")
 DUMP_FILE = Path(__file__).with_name("list_page.html")
 # ======================
